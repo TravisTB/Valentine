@@ -5,19 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will You Be My Valentine?</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('your-background-image.jpg'); /* Add NZ or SA themed background */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 30px;
+            font-size: 1.2em;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 25px;
+            transition: all 0.3s ease-in-out;
+        }
+        .yes-button {
+            background-color: #ff6f61; /* Soft red */
+            color: white;
+        }
+        .no-button {
+            background-color: #ffcc00; /* Yellow */
+            color: black;
+        }
+        .yes-button:hover {
+            background-color: #ff3d2d;
+        }
+        .no-button:hover {
+            background-color: #ffb300;
+        }
+        .gif_container {
+            margin-top: 20px;
+        }
+        .gif_container img {
+            max-width: 100%;
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Will you be my Valentine?</h1>
-        <p>This is a test</p>
+        <h1>Hannah, will you be my Valentine in New Zealand?</h1>
+        <p>I’ve been thinking about this for a while now...</p>
         <div class="buttons">
-            <button class="yes-button" onclick="handleYesClick()">Yes</button>
-            <button class="no-button" onclick="handleNoClick()">No</button>
+            <button class="yes-button" onclick="handleYesClick()">Of course, I'd love to!</button>
+            <button class="no-button" onclick="handleNoClick()">Not this time, but still friends!</button>
         </div>
         <div class="gif_container">
             <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function handleYesClick() {
+            alert("Yay! I'm so glad you said yes!");
+            // You can also change content dynamically here after the click.
+        }
+
+        function handleNoClick() {
+            alert("Aww, thanks for considering it!");
+            // You could show a cute message or different GIF here as well.
+        }
+    </script>
 </body>
 </html>
